@@ -7,6 +7,3 @@ echo "THIS MIGHT TAKE AWHILE TO COMPLETE"
 cd /
 dd if=/dev/zero of=/deleteme bs=1M
 rm -f /deleteme
-
-# remove packer /tmp/script.sh as last step
-rm /tmp/script.sh
