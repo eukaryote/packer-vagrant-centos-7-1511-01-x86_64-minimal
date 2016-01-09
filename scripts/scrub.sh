@@ -6,12 +6,9 @@ sed -i '/HWADDR/d' /etc/sysconfig/network-scripts/ifcfg-e*
 cd /etc
 > ./resolv.conf
 
-cd /tmp
-shred -uv *
-shred -uv .*
+find /tmp -mindepth 1 -delete
 
-cd /var/lib/systemd
-shred -uv ./random-seed
+shred -uv /var/lib/systemd/random-seed
 
 cd /var/log
 > wtmp
@@ -24,4 +21,4 @@ cd /var/log
 > maillog
 
 cd /root
-shred -uv .lesshst .bash_history
+rm -f .lesshst .bash_history
