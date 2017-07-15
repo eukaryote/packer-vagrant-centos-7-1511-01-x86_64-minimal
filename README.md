@@ -1,7 +1,7 @@
-# packer-vagrant-centos-7-1511-01-x86_64-minimal
+# packer-vagrant-centos-7-x86_64-minimal
 
 This is a fork of https://github.com/bbirkinbine/packer-vagrant-centos-7-1503-01-x86_64-minimal
-for personal use that uses centos7 version 1511 instead of 1503 and has some other minor tweaks.
+for personal use that uses a newer centos7 version and has some other minor changes.
 
 To create the vagrant box, run:
 
